@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syoping(쇼핑) - Order Management Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Syoping(쇼핑)- Order Management Portal</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#cart">View Cart</a></li>
+      <li><a href="#edit-cart">Edit Cart</a></li>
+      <li><a href="#final-order">Finalize Order</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="deals.html">Deals</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="your-login-portal-link.html" class="login-button">Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+
+    <!-- Cart Section -->
+
+
+
+
+    <section id="cart">
+  <h2>Your Cart:</h2>
+  <div id="cart-items">
+    <!-- Demo Product 1 -->
+    <div class="cart-item">
+      <img src="https://d1ncau8tqf99kp.cloudfront.net/converted/110590_original_local_1200x1050_v3_converted.webp" alt="Product 1">
+      <div class="item-details">
+        <h3>Wireless Headphones</h3>
+        <p>Price: $120</p>
+        <p>Quantity: 2</p>
+      </div>
+    </div>
+    <!-- Demo Product 2 -->
+    <div class="cart-item">
+      <img src="https://m.media-amazon.com/images/I/71WoHCC996L.jpg" alt="Product 2">
+      <div class="item-details">
+        <h3>Smart Watch</h3>
+        <p>Price: $80</p>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+    <!-- Demo Product 3 -->
+    <div class="cart-item">
+      <img src="https://jblonlinestore.com.my/cdn/shop/files/Charge5wifi_6dff8a2e-3e3b-47d3-b26b-c00cdfe5a335.png?v=1724396861" alt="Product 3">
+      <div class="item-details">
+        <h3>Bluetooth Speaker</h3>
+        <p>Price: $50</p>
+        <p>Quantity: 3</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="cart">
+  <h2>Add/Remove from cart:</h2>
+  <div id="cart-items">
+    <!-- Demo Product 1 -->
+    <div class="cart-item">
+      <img src="https://d1ncau8tqf99kp.cloudfront.net/converted/110590_original_local_1200x1050_v3_converted.webp" alt="Product 1">
+      <div class="item-details">
+        <h3>Wireless Headphones</h3>
+        <p>Price: $120</p>
+        <p>Quantity: <span class="quantity">2</span></p>
+        <div class="quantity-control">
+          <button class="minus" onclick="updateQuantity(this, -1)">-</button>
+          <button class="plus" onclick="updateQuantity(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+    <!-- Demo Product 2 -->
+    <div class="cart-item">
+      <img src="https://m.media-amazon.com/images/I/71WoHCC996L.jpg" alt="Product 2">
+      <div class="item-details">
+        <h3>Smart Watch</h3>
+        <p>Price: $80</p>
+        <p>Quantity: <span class="quantity">1</span></p>
+        <div class="quantity-control">
+          <button class="minus" onclick="updateQuantity(this, -1)">-</button>
+          <button class="plus" onclick="updateQuantity(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+    <!-- Demo Product 3 -->
+    <div class="cart-item">
+      <img src="https://jblonlinestore.com.my/cdn/shop/files/Charge5wifi_6dff8a2e-3e3b-47d3-b26b-c00cdfe5a335.png?v=1724396861" alt="Product 3">
+      <div class="item-details">
+        <h3>Bluetooth Speaker</h3>
+        <p>Price: $50</p>
+        <p>Quantity: <span class="quantity">3</span></p>
+        <div class="quantity-control">
+          <button class="minus" onclick="updateQuantity(this, -1)">-</button>
+          <button class="plus" onclick="updateQuantity(this, 1)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Centered Add New Product Button -->
+  <div id="add-new-product-container">
+    <button id="add-new-product" onclick="redirectToProducts()">Add New Product</button>
+  </div>
+</section>
+
+
+
+
+
+
+    <section id="final-order">
+  <h2>Finalize Your Order</h2>
+  <p>Once satisfied with your cart, proceed to the payment page.</p>
+  <a href="payment-page-link.html" id="proceed-to-payment">Proceed to Payment</a>
+</section>
+
+
+
+
+    <!-- Final Order Section -->
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Syoping Mall - All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
